@@ -1,0 +1,30 @@
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cfe0e8;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #3b3a30;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navBar {
+  box-shadow: 0px 5px 5px #363636;
+}
+
+li a:hover:not(.active) {
+    background-color: #c0ded9;
+}
+
+.active {
+    background-color: #87bdd8;
+}*/
