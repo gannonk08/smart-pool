@@ -36,7 +36,9 @@ $(document).on('ready', function() {
       appendTier(tierThreeRankArr, tierThreeNameArr, $('#tierThreeOptions'))
       appendTier(tierFourRankArr, tierFourNameArr, $('#tierFourOptions'))
     })
-
+$('#submitPicksButton').on('click', function() {
+  event.preventDefault()
+  
 
 });
 
@@ -87,6 +89,7 @@ function combineRankAndName(worldRankArray, golferNameArray) {
   }
   return rankAndNameArray
 }
+
 
 
 //move to utilities functions
