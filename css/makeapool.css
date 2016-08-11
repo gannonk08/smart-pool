@@ -1,0 +1,13 @@
+#welcome {
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(73, 21, 215, 0.6);
+  border: 1px solid #7245ed;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+};
+#tier1_tier2{
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}

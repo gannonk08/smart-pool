@@ -1,14 +1,22 @@
 #leaderboardWell{
-  margin-top: 100px;
+  margin-top: 25px;
   margin-right: 8.33%;
   height: 400px;
   text-align: center;
 }
 #scoringWell{
-  margin-top: 100px;
+  margin-top: 25px;
   margin-right: 8.33%;
   height: 400px;
 }
 .table>thead>tr>th{
     text-align: center;
+}
+#heading {
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(73, 21, 215, 0.6);
+  border: 1px solid #7245ed;
+  color: #FFFFFF;
 }

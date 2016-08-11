@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Untitled</title>
+    <title>Pool Standings</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="    https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
@@ -77,6 +77,10 @@
         </div>
     </nav>
     <div class="row">
+        <h2 class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 bg-info" id="heading">POOL STANDINGS</h2>
+        <h2 class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 bg-info" id="heading">LEADERBOARD</h2>
+    </div>
+    <div class="row">
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 pre-scrollable well well-lg" id="scoringWell">
             <table id="scoringTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
@@ -103,8 +107,9 @@
 
             </table>
         </div>
+
         <div class="col-md-4 col-sm-4 col-xs-10 pre-scrollable well well-lg" id="leaderboardWell">
-            <table class="table table-striped table-responsive" id="leaderTable">
+            <table id="leaderTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th id="pollPosition">#</th>
@@ -118,7 +123,8 @@
 
             </table>
         </div>
-    </div>
+      </div>
+
 
 
 
@@ -126,10 +132,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<!-- datatable scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <!-- datatable scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <!-- disabled for call limit -->
 
     <script type="text/javascript" src="js/leaderboard.js"></script>
