@@ -13,7 +13,8 @@ var tierOneObj = {};
 var tierTwoObj = {};
 var tierThreeObj = {};
 var tierFourObj = {};
-
+var userPicksObj = {};
+var unformattedEntryArray = []
 
 
 $(document).on('ready', function() {
@@ -36,9 +37,17 @@ $(document).on('ready', function() {
       appendTier(tierThreeRankArr, tierThreeNameArr, $('#tierThreeOptions'))
       appendTier(tierFourRankArr, tierFourNameArr, $('#tierFourOptions'))
     })
-$('#submitPicksButton').on('click', function() {
-  event.preventDefault()
-  
+$('#submitPicksButton').on('click',function(event) {
+  event.preventDefault();
+  userPicksObj = {
+    entryName : $('#entryName').val(),
+    tier1 : $('#tierOneOptions').val(),
+    tier2 : $('#tierTwoOptions').val(),
+    tier3 : $('#tierThreeOptions').val(),
+    tier4 : $('#tierFourOptions').val()
+  }
+console.log(userPicksObj);
+});
 
 });
 
