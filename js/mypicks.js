@@ -46,7 +46,8 @@ $('#submitPicksButton').on('click',function(event) {
     tier3 : $('#tierThreeOptions').val(),
     tier4 : $('#tierFourOptions').val()
   }
-console.log(userPicksObj);
+  unformattedEntryArray.push(userPicksObj);
+console.log(unformattedEntryArray);
 });
 
 });

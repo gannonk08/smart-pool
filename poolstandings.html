@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/poolstandings.css">
 
+    <!-- table sorter -->
 
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" />
 
 
 </head>
@@ -76,16 +78,23 @@
     </nav>
     <div class="row">
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 pre-scrollable well well-lg" id="scoringWell">
-            <table id="scoringTable" class="table table-striped table-responsive">
+            <table id="scoringTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th scope="col" id="poolRanking">Ranking</th>
                         <th scope="col" id="entryName">Entry Name</th>
-                        <th scope="col" id="entryScore">Agg Score</th>
-                        <th scope="col" colspan="2" id="tier1Golfer">Tier 1 Golfer</th>
-                        <th scope="col" colspan="2" id="tier2Golfer">Tier 2 Golfer</th>
-                        <th scope="col" colspan="2" id="tier3Golfer">Tier 3 Golfer</th>
-                        <th scope="col" colspan="2" id="tier4Golfer">Tier 4 Golfer</th>
+                        <th scope="col" id="entryScore" data-defaultsort="desc">Agg Score</th>
+
+                        <th scope="col" colspan="1" id="tier1Golfer">Tier 1 Golfer</th>
+                        <th scope="col" colspan="1" id="tier1Score">Score</th>
+
+                        <th scope="col" colspan="1" id="tier2Golfer">Tier 2 Golfer</th>
+                        <th scope="col" colspan="1" id="tier2Score">Score</th>
+
+                        <th scope="col" colspan="1" id="tier3Golfer">Tier 3 Golfer</th>
+                        <th scope="col" colspan="1" id="tier3Score">Score</th>
+
+                        <th scope="col" colspan="1" id="tier4Golfer">Tier 4 Golfer</th>
+                        <th scope="col" colspan="1" id="tier4Score">Score</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -118,14 +127,15 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- datatable scripts -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <!-- disabled for call limit -->
 
     <script type="text/javascript" src="js/leaderboard.js"></script>
     <script type="text/javascript" src="js/scoreCalc.js"></script>
     <script type="text/javascript" src="js/utilities.js"></script>
     <script type="text/javascript" src="js/sortTable.js"></script>
-<
 
 </body>
 
