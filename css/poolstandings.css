@@ -1,4 +1,14 @@
 #leaderboardWell{
   margin-top: 100px;
+  margin-right: 8.33%;
   height: 400px;
+  text-align: center;
+}
+#scoringWell{
+  margin-top: 100px;
+  margin-right: 8.33%;
+  height: 400px;
+}
+.table>thead>tr>th{
+    text-align: center;
 }
