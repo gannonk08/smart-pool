@@ -21,33 +21,67 @@ function removeNumbering(tierString) {
 }
 
 
-var testEntryArray = [
-  testEntryObj1 = {
-    entryName: "Kristjan",
-    tier1: "# 1 . Day, Jason",
-    tier2: "# 21 . Johnson, Zach",
-    tier3: "# 37 . Westwood, Lee",
-    tier4: "# 62 . Simpson, Webb"
-  },
-  testEntryObj2 = {
-  entryName: "Sancho",
-  tier1: "# 3 . Spieth, Jordan",
-  tier2: "# 21 . Koepka, Brooks",
-  tier3: "# 37 . Willett, Danny",
-  tier4: "# 62 . Horschel, Billy"
-},
-testEntryObj3 = {
-entryName: "Billy Madison",
-tier1: "# 3 . Mickelson, Phil",
-tier2: "# 21 . Holmes, J.B.",
-tier3: "# 37 . Walker, Jimmy",
-tier4: "# 62 . McDowell, Graeme"
-},
-testEntryObj4 = {
-entryName: "Steven Glansberg",
-tier1: "# 3 . Fowler, Rickie",
-tier2: "# 21 . Furyk, Jim",
-tier3: "# 37 . Dufner, Jason",
-tier4: "# 62 . Woodland, Gary"
+function $fadeAndReplace(buttonID, divToFade, divToFadeIn) {
+  buttonID.on('click', function functionName() {
+    initialFadeOut()
+    setTimeout(function() {
+      divToFadeIn.fadeIn(2000)
+    }, 2000)
+  })
+  function initialFadeOut() {
+
+      divToFade.fadeOut(2000)
+  }
 }
-]
+
+    function naturalSort(a, b) {
+        var ra = a.match(/\D+|\d+/g);
+        var rb = b.match(/\D+|\d+/g);
+        var r = 0;
+
+        while (!r && ra.length && rb.length) {
+            var x = ra.shift(),
+                y = rb.shift(),
+                nx = parseInt(x),
+                ny = parseInt(y);
+
+            if (isNaN(nx) || isNaN(ny))
+                r = x > y ? 1 : (x < y ? -1 : 0);
+            else
+                r = nx - ny;
+        }
+        return r || ra.length - rb.length;
+    }
+
+
+
+    var testEntryArray = [
+        testEntryObj1 = {
+            entryName: "Kristjan",
+            tier1: "# 1 . Day, Jason",
+            tier2: "# 21 . Johnson, Zach",
+            tier3: "# 37 . Westwood, Lee",
+            tier4: "# 62 . Simpson, Webb"
+        },
+        testEntryObj2 = {
+            entryName: "Sancho",
+            tier1: "# 3 . Spieth, Jordan",
+            tier2: "# 21 . Koepka, Brooks",
+            tier3: "# 37 . Willett, Danny",
+            tier4: "# 62 . Horschel, Billy"
+        },
+        testEntryObj3 = {
+            entryName: "Billy Madison",
+            tier1: "# 3 . Mickelson, Phil",
+            tier2: "# 21 . Holmes, J.B.",
+            tier3: "# 37 . Walker, Jimmy",
+            tier4: "# 62 . McDowell, Graeme"
+        },
+        testEntryObj4 = {
+            entryName: "Steven Glansberg",
+            tier1: "# 3 . Fowler, Rickie",
+            tier2: "# 21 . Furyk, Jim",
+            tier3: "# 37 . Dufner, Jason",
+            tier4: "# 62 . Woodland, Gary"
+        }
+    ]

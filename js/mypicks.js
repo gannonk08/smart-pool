@@ -18,6 +18,7 @@ var unformattedEntryArray = []
 
 
 $(document).on('ready', function() {
+  $('#signUpThanks').fadeOut(0)
     var mastersFieldUrl = 'https://galvanize-cors-proxy.herokuapp.com/http://api.sportradar.us/golf-t2/seasontd/pga/2016/players/statistics.json?api_key=f6dhcjtrn5xbsm3fkjg439ud';
     var successFullRequest = Promise.resolve($.ajax({
       url: mastersFieldUrl,
@@ -99,23 +100,4 @@ function combineRankAndName(worldRankArray, golferNameArray) {
   }
   return rankAndNameArray
 }
-
-
-
-//move to utilities functions
-function naturalSort(a, b) {
-    var ra = a.match(/\D+|\d+/g);
-    var rb = b.match(/\D+|\d+/g);
-    var r = 0;
-
-    while(!r && ra.length && rb.length) {
-        var x = ra.shift(), y = rb.shift(),
-            nx = parseInt(x), ny = parseInt(y);
-
-        if(isNaN(nx) || isNaN(ny))
-            r = x > y ? 1 : (x < y ? -1 : 0);
-        else
-            r = nx - ny;
-    }
-    return r || ra.length - rb.length;
-}
+$fadeAndReplace($('#submitPicksButton'),$('#entryForm'),$('#signUpThanks'))

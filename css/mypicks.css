@@ -7,7 +7,13 @@
   color: #FFFFFF;
   margin-bottom: 50px;
 };
-#tier1_tier2{
-  margin-top: 50px !important;
-  margin-bottom: 50px !important;
+
+#signUpThanks{
+  text-align: center;
+  margin-top: 200px;
+}
+
+#signUpThanks > h1{
+  text-align: center;
+  color: white;
 }
